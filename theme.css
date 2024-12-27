@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    background-color: #333;
+    color: #333;
+    background-color: #fff;
     line-height: 1.6;
 }
 
@@ -13,13 +13,16 @@ p {
     color: #fff;
 }
 
+.hamburger-menu span {
+    background-color: #333;
+}
+
 a {
-    color: #1e90ff;
+    color: #0067cc;
     text-decoration: none;
 }
 
 a:hover {
-    color: #add8e6;
     text-decoration: underline;
 }
 
@@ -30,16 +33,15 @@ a:hover {
 }
 
 header {
-    background: #444;
-    color: #fff;
+    background: #f4f4f4;
+    color: #333;
 }
 
-footer {
-    background: #444;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+
+header a {
+    text-decoration: none;
+    margin: 0 15px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 700px) {
@@ -48,8 +50,36 @@ footer {
     }
 }
 
-.hamburger-menu span {
-    background-color: #FFFFFF;
+
+footer {
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #E0E0E0;
+        background-color: #212121;
+    }
+
+    header {
+        background-color: black;
+    }
+
+    a, a:visited {
+        color: #BBDEFB;
+    }
+
+    header, footer {
+        background: black;
+        color: white;
+    }
+    .hamburger-menu span {
+        background-color: white;
+    }
 }
 header {
     height: 100%;
